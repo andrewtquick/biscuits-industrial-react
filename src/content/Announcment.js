@@ -1,8 +1,15 @@
 const Announcment = () => {
     return (
-    <div className="p-5 mb-4 bg-light rounded-3 border" style="margin-bottom:30px">
-        <h1>Biscuits Industrial</h1> <p></p><h3> Eve Online, Spreadsheets in space </h3>
-    </div>
+        <div className="alert alert-success" role="alert" data-mdb-color="success">
+        <h4 className="alert-heading">Hello!</h4>
+        <p>
+          Website is now the latest version!. Feel free to join my <a href="https://discord.gg/kksqmuu" target="__blank">Discord</a> for updates! 
+        </p>
+        <hr></hr>
+        <p className="mb-0">
+          Welcome! If you wanna help, you can join the discord above or go to the <a target="__blank" href="https://github.com/SkippTekk/Biscuits-Industrial-EJS" >GitHub</a> and offer some code!
+        </p>
+      </div>
     )
 }
 export default Announcment;

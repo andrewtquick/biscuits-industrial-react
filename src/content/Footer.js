@@ -74,7 +74,7 @@ const LeftBar = () => {
             </div>
           </section>
 
-          <div className="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+          <div className="text-center p-4" style={{backgroundColor: "rgba(0, 0, 0, 0.025)"}}>
             © 2022 Copyright:
             <a className="text-reset fw-bold" target="__blank" href="https://skipptekk.com">SkippTekk</a>
           </div>

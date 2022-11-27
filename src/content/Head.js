@@ -1,8 +1,8 @@
 const Head = () => {
     return (
         <head>
-      <meta charset="utf-8"></meta>
-      <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+      <meta htmlcharset="utf-8"></meta>
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>
       <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
       <meta property="og:type" content="website"></meta>
       <meta property="og:url" content="https://skipptekk.com"></meta>
