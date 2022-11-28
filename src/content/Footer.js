@@ -55,9 +55,6 @@ const LeftBar = () => {
                     <a href="https://www.fuzzwork.co.uk/dump/" target="__blank" className="text-reset">Database dump</a>
                   </p>
                   <p>
-                    <a href="https://github.com/joshschmille/discord-widget" target="__blank" className="text-reset">Discord widget by <b>joshschmille</b></a>
-                  </p>
-                  <p>
                     <a href="https://www.eveonline.com/signup?invc=a9af4d7c-7d69-4d5c-bea7-3c4a1ec56493" target="_blank" className="text-reset">Referel code!</a>
                   </p>
                 </div>
