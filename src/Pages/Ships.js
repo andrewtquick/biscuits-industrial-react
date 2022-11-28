@@ -7,7 +7,7 @@ import Middlebar from '../Ships/Middlebar';
 import Rightbar from '../Ships/Rightbar';
 import { useParams } from 'react-router-dom';
 
-const Home = () => {
+const Ships = () => {
   const { id } = useParams();
   document.title=`How to build ${id}`
     return (
@@ -39,4 +39,4 @@ const Home = () => {
       
     )
 }
-export default Home;
+export default Ships;

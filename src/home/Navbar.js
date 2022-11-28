@@ -15,7 +15,7 @@ const Navbar = () => {
                     <Link className="nav-link disabled">Reprocessing <i className="fas fa-times"></i></Link>
                     <Link className="nav-link disabled">Ship Fitting <i className="fas fa-times"></i></Link>
                     <Link className="nav-link disabled">Jump Gate Refuel <i className="fas fa-times"></i></Link>
-                    <Link className="nav-link" target="_blank" to="http://localhost:8081/api">API for Geeks <i className="fas fa-sync"></i></Link>
+                    <Link className="nav-link" target="__blank" to="http://localhost:8081/api">API for Geeks <i className="fas fa-sync"></i></Link>
                     <Link className="nav-link" to="/about">About <i className="fas fa-sync"></i></Link>
                 </div>
             </div>

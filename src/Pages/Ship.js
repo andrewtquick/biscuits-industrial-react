@@ -5,7 +5,7 @@ import Navbar from "../Ships/Navbar";
 import Announcment from '../content/Announcment';
 import Footer from '../content/Footer'
 
-const Home = () => {
+const Ship = () => {
     return (
         <html>
     <body>
@@ -37,4 +37,4 @@ const Home = () => {
       
     )
 }
-export default Home;
+export default Ship;

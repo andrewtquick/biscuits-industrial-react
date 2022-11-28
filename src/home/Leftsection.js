@@ -1,6 +1,9 @@
 const LeftBar = () => {
     return (
-        <iframe src="https://discordapp.com/widget?id=656049566046748694&theme=dark" 
+
+        <iframe 
+            title="Discord Widget"
+            src="https://discordapp.com/widget?id=656049566046748694&theme=dark" 
             width="100%" 
             height="100%" 
             allowtransparency="true" 

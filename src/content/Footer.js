@@ -55,14 +55,14 @@ const LeftBar = () => {
                     <a href="https://www.fuzzwork.co.uk/dump/" target="__blank" className="text-reset">Database dump</a>
                   </p>
                   <p>
-                    <a href="https://www.eveonline.com/signup?invc=a9af4d7c-7d69-4d5c-bea7-3c4a1ec56493" target="_blank" className="text-reset">Referel code!</a>
+                    <a href="https://www.eveonline.com/signup?invc=a9af4d7c-7d69-4d5c-bea7-3c4a1ec56493" target="__blank" className="text-reset">Referel code!</a>
                   </p>
                 </div>
 
                 <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
 
                   <h6 className="text-uppercase fw-bold mb-4">Contact/info</h6>
-                  <p><i className="fab fa-discord me-3 text-secondary" ></i><a href="https://discord.gg/kksqmuu" target="_blank"> Discord</a></p>
+                  <p><i className="fab fa-discord me-3 text-secondary" ></i><a href="https://discord.gg/kksqmuu" target="__blank"> Discord</a></p>
                   <p><i className="fas fa-database me-3 text-secondary" ></i><a href="https://developers.eveonline.com/resource/resources" target="blank">Database 2022-11-08</a></p>
                 </div>
 
