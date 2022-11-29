@@ -6,6 +6,8 @@ import Leftbar from '../Ships/Leftbar';
 import Middlebar from '../Ships/Middlebar';
 import Rightbar from '../Ships/Rightbar';
 import { useParams } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import axios from 'axios';
 
 const Ships = () => {
   const { id } = useParams();
@@ -20,15 +22,9 @@ const Ships = () => {
           <Announcment />
       <section className='container-fluid'>
         <div className='row'>
-          <div className='col order-1'>
-            <Leftbar />
-          </div>
-          <div className='col order-2'>
-            <Middlebar />
-          </div>
-          <div className='col order-3'>
-            <Rightbar />
-          </div>
+              <Leftbar />
+              <Middlebar />
+              <Rightbar />
         </div>
           <div>
             <Footer />

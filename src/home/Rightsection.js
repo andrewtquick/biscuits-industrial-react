@@ -1,4 +1,4 @@
-const LeftBar = () => {
+const Rightsection = () => {
     return (
         <div className='col order-3'>
             <h4 className="media-heading">I Like Biscuits.</h4>
@@ -8,4 +8,4 @@ const LeftBar = () => {
         </div>
     )
 }
-export default LeftBar;
+export default Rightsection;
