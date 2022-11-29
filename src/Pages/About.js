@@ -7,7 +7,9 @@ const About = () => {
     return (
     <div>
         <Header />
-        <Navbar />
+        <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
+          <Navbar />
+        </nav>
         Hosted website uptime is:  uptime <p></p>
         Average server load:  load <p></p>
         Server Operating system is: type <p></p>

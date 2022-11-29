@@ -1,3 +1,4 @@
+import Clock from '../content/Clock';
 import '../css/navbar.css'
 
 const Navbar = () => {
@@ -35,6 +36,9 @@ const Navbar = () => {
         </ul>
           </ul>
         </div>
+        <div class="navbar-text">
+        <Clock />
+      </div>
         </div>
     )
 }
