@@ -6,8 +6,6 @@ import Leftbar from '../Ships/Leftbar';
 import Middlebar from '../Ships/Middlebar';
 import Rightbar from '../Ships/Rightbar';
 import { useParams } from 'react-router-dom';
-import { useEffect, useState } from 'react';
-import axios from 'axios';
 
 const Ships = () => {
   const { id } = useParams();
