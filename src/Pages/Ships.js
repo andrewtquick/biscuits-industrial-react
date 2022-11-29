@@ -18,7 +18,7 @@ const Ships = () => {
           <Navbar />
       </nav>
           <Announcment />
-      <section className='container-fluid'>
+      <div className='container-fluid'>
         <div className='row'>
               <Leftbar />
               <Middlebar />
@@ -27,7 +27,7 @@ const Ships = () => {
           <div>
             <Footer />
           </div>
-      </section>
+      </div>
     </body>
   </html>
       

@@ -8,7 +8,6 @@ const Leftbar = () => {
       const fetchShips = async () => {
         try {
           const res = await axios.get('http://localhost:8081/api/s/' + id);
-          console.log(res)
           getShips(res.data);
         } catch (error) {
           console.log(error);
@@ -17,7 +16,7 @@ const Leftbar = () => {
       fetchShips();
     },[])
     return (
-        <div className='col order-1'>
+        <div className='col-md-3 leftNav'>
             <div className='ship'>
               {ship.map(ship=>(
                 <div className='ship'>
