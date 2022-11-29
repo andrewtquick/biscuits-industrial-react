@@ -24,9 +24,9 @@ const Leftbar = () => {
                 <input type="image" class="media-object" target="__blank" src={`https://image.testeveonline.com/Render/${ship.typeID}_512.png`} style={{maxWidth:"100%", maxHeight:"100%"}} alt='Ship Image goes Here, Mail SkippTekk or tweet @XGKIPPY for a fix'></input>
                 </a>
               <h4 className="media-heading">Default values of the ship.</h4>
-              <p>Ship Capacitor:  {ship.capacity} MW </p>
-              <p>Ship Mass: {ship.mass}</p>
-              <p>Ship Volume: {ship.volume}</p>
+              <p>Ship Capacitor:  {ship.capacity.toLocaleString('en-US')} MW </p>
+              <p>Ship Mass: {ship.mass.toLocaleString('en-US')}</p>
+              <p>Ship Volume: {ship.volume.toLocaleString('en-US')}</p>
               <p>Group ID: {ship.groupID}</p>
               <p>Race BROKEN on faction: </p>
               </div>

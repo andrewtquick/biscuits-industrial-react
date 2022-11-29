@@ -8,12 +8,14 @@ const Middlebar = () => {
     const [ ship, getShips] = useState([]);
     useEffect(() => {
       const fetchShips = async () => {
+        const apiRes = 'First fetch done'
         try {
           const res = await axios.get('http://localhost:8081/api/s/' + id);
           getShips(res.data);
         } catch (error) {
           console.log(error);
-          return 
+        } finally {
+            console.log(apiRes)
         }
       }
       fetchShips();
@@ -21,7 +23,7 @@ const Middlebar = () => {
     const [ build, getBuild] = useState([]);
     useEffect(() => {
       const fetchShips = async () => {
-        let apiRes = 'All done';
+        const apiRes = 'Second Fetch done';
         try {
           const res = await axios.get('http://localhost:8081/api/b/' + id);
           getBuild(res.data);
@@ -104,31 +106,28 @@ const Middlebar = () => {
                         </select>
                     </div>
                     <div className="Minerals">
-                        <table className="table">
-                            <tbody>
-                                <tr>
-                                    <th>Minerals</th>
-                                    <th>Citadel</th>
-                                    <th>Engineering</th>
-                                    <th>Refining</th>
-                                </tr>
-                            </tbody>
-                        </table>
                             {build.map(build=>(
-                                <table className="table table-striped">
+                                <table className="table">
                                     <thead>
+                                        <tr>
+                                            <th><b>Minerals</b></th>
+                                            <th><b>Citadel</b></th>
+                                            <th><b>Engineering</b></th>
+                                            <th><b>Refining</b></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
                                         <tr>
                                             <td><input type="image" src={`https://images.evetech.net/types/${build.materialTypeID}/icon`} alt="It broke. i needs fix Ships/Middlebar"></input>{build.typeName}</td>
                                             <td>{build.quantity}</td>
                                             <td>{build.quantity}</td>
                                             <td>{build.quantity}</td>
                                         </tr>
-                                    </thead>
+                                    </tbody>
                                     <tbody>
-
                                     <tr>
-                                        <td colspan="4">
-                                        <table class="table mb-0">
+                                        <td colSpan="4">
+                                        <table class="table-bordered mb-0">
                                             Stuff under
                                         </table>
                                         </td>
