@@ -21,7 +21,7 @@ const Middlebar = () => {
     const [ build, getBuild] = useState([]);
     useEffect(() => {
       const fetchShips = async () => {
-        let apiRes = null;
+        let apiRes = 'All done';
         try {
           const res = await axios.get('http://localhost:8081/api/b/' + id);
           getBuild(res.data);
@@ -104,34 +104,38 @@ const Middlebar = () => {
                         </select>
                     </div>
                     <div className="Minerals">
-                        <table className="table table-striped">
-                            <thead>
+                        <table className="table">
+                            <tbody>
                                 <tr>
-                                <th>Minerals</th>
-                                <th>Citadel</th>
-                                <th>Engineering</th>
-                                <th>Refining</th>
+                                    <th>Minerals</th>
+                                    <th>Citadel</th>
+                                    <th>Engineering</th>
+                                    <th>Refining</th>
                                 </tr>
-                            </thead>
+                            </tbody>
                         </table>
-                        
-                            <div className='build'>
                             {build.map(build=>(
-                                <div className='build'>
-                                    <table class="table">
-                                        <tbody>
-                                            <tr>
-                                            <th><input type="image" src={`https://images.evetech.net/types/${build.materialTypeID}/icon`}></input>{build.typeName}</th>
+                                <table className="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <td><input type="image" src={`https://images.evetech.net/types/${build.materialTypeID}/icon`} alt="It broke. i needs fix Ships/Middlebar"></input>{build.typeName}</td>
                                             <td>{build.quantity}</td>
                                             <td>{build.quantity}</td>
                                             <td>{build.quantity}</td>
-                                            </tr>
-                                        </tbody>
-                                        </table>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
 
-                            </div>
+                                    <tr>
+                                        <td colspan="4">
+                                        <table class="table mb-0">
+                                            Stuff under
+                                        </table>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
                             ))}
-                        </div>
                     </div>
               </div>
               ))}
