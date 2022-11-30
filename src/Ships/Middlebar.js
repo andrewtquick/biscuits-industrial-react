@@ -1,7 +1,6 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-import { render } from "@testing-library/react";
 
 const Middlebar = () => {
     const {id} = useParams();
@@ -111,16 +110,12 @@ const Middlebar = () => {
                                     <thead>
                                         <tr>
                                             <th><b>Minerals</b></th>
-                                            <th><b>Citadel</b></th>
-                                            <th><b>Engineering</b></th>
-                                            <th><b>Refining</b></th>
+                                            <th><b>Structure</b></th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
                                             <td><input type="image" src={`https://images.evetech.net/types/${build.materialTypeID}/icon`} alt="It broke. i needs fix Ships/Middlebar"></input>{build.typeName}</td>
-                                            <td>{build.quantity}</td>
-                                            <td>{build.quantity}</td>
                                             <td>{build.quantity}</td>
                                         </tr>
                                     </tbody>

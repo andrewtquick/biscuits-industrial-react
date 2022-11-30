@@ -1,11 +1,11 @@
-# biscuits-industrial-vue
+# biscuits-industrial-react
 Website project for Eve Online.
 
 Temp website will be located at [My website](https://skipptekk.com) Once i feel it's ready to be "open" to the public.
 
 To see the project on your own machine, 
-1) git clone https://github.com/SkippTekk/biscuits-industrial-vue.git
-2) cd biscuits-industrial-vue
+1) git clone https://github.com/SkippTekk/biscuits-industrial-react.git
+2) cd biscuits-industrial-react
 3) npm install
 4) npm start
 
