@@ -1,6 +1,12 @@
 import { useParams } from "react-router-dom";
 import { useEffect, useState } from 'react';
 import axios from 'axios';
+import BPO from "../components/BPO";
+import BuildCount from "../components/BuildCount";
+import Location from "../components/Location";
+import Citadel from "../components/Citadel";
+import CitadelRig from "../components/CitadelRig";
+import OreBonus from "../components/OreBonus";
 
 const Middlebar = () => {
     const {id} = useParams();
@@ -44,67 +50,12 @@ const Middlebar = () => {
                     <h1>{ship.typeName} ID: {ship.typeID}</h1>
                     <p> Ship Tree location: will be at a later date.</p>
                     </div>
-                    <div className="BPONumber">
-                            <legend>What's your ME BPO number</legend>
-                            <select className="forum-select" id="BPO">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                                <option value="5">5</option>
-                                <option value="6">6</option>
-                                <option value="7">7</option>
-                                <option value="8">8</option>
-                                <option value="9">9</option>
-                                <option value="10">10</option>                            
-                            </select>
-                    </div>
-                    <div className="ShipCount">
-                        <legend>How many ships being built?</legend>
-                        <select className="forum-select" id="ShipCount">
-                            
-                        </select>
-                    </div>
-                    <div className="Location">
-                        <legend>Select your Location</legend>
-                        <select className="forum-select" id="BPO">
-                            <option value="Highsec">Highsec</option>
-                            <option value="Lowsec">Lowsec</option>
-                            <option value="Null/WormHole">Null/WormHole</option>
-                        </select>
-                    </div>
-                    <div className="Station">
-                        <legend>Select your Station</legend>
-                        <select>
-                            <option value="Athanor">Athanor</option>
-                            <option value="Tatara">Tatara</option>
-                            <option value="Raitaru">Raitaru</option>
-                            <option value="Azbel">Azbel</option>
-                            <option value="Sotiyo">Sotiyo</option>
-                            <option value="Astrahus">Astrahus</option>
-                            <option value="Fortizar">Fortizar</option>
-                            <option value="Keepstar">Keepstar</option>
-                        </select>
-                    </div>
-                    <div className="Rig">
-                        <legend>What's the Rig?</legend>
-                        <select>
-                            <option value="0">0%</option>
-                            <option value="1">5%</option>
-                            <option value="2">10%</option>
-                            <option value="3">15%</option>
-                        </select>
-                    </div>
-                    <div className="OreBonus">
-                        <legend>Ore Bonus</legend>
-                        <select>
-                            <option value="0">0%</option>
-                            <option value="1">5%</option>
-                            <option value="2">10%</option>
-                            <option value="3">15%</option>
-                        </select>
-                    </div>
-                    <div className="Minerals">
+                    <BPO />
+                    <BuildCount />
+                    <Location />
+                    <Citadel />
+                    <CitadelRig />
+                    <OreBonus />
                                 <table className="table">
                                     <thead>
                                         <tr>
@@ -112,7 +63,8 @@ const Middlebar = () => {
                                             <th><b>Structure</b></th>
                                         </tr>
                                     </thead>
-                            {build.map(build=>(<div className="table">
+                            {build.map(build=>(
+                            <div className="table">
                                     <tbody>
                                         <tr>
                                             <td><input type="image" src={`https://images.evetech.net/types/${build.materialTypeID}/icon`} alt="It broke. i needs fix Ships/Middlebar"></input>{build.typeName}</td>
@@ -131,7 +83,6 @@ const Middlebar = () => {
                                     </div>
                                     ))}
                                 </table>
-                    </div>
               </div>
               ))}
             </div>
