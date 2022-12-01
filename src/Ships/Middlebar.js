@@ -105,7 +105,6 @@ const Middlebar = () => {
                         </select>
                     </div>
                     <div className="Minerals">
-                            {build.map(build=>(
                                 <table className="table">
                                     <thead>
                                         <tr>
@@ -113,6 +112,7 @@ const Middlebar = () => {
                                             <th><b>Structure</b></th>
                                         </tr>
                                     </thead>
+                            {build.map(build=>(<div className="table">
                                     <tbody>
                                         <tr>
                                             <td><input type="image" src={`https://images.evetech.net/types/${build.materialTypeID}/icon`} alt="It broke. i needs fix Ships/Middlebar"></input>{build.typeName}</td>
@@ -128,8 +128,9 @@ const Middlebar = () => {
                                         </td>
                                     </tr>
                                     </tbody>
+                                    </div>
+                                    ))}
                                 </table>
-                            ))}
                     </div>
               </div>
               ))}

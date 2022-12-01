@@ -35,7 +35,7 @@ const Navbar = () => {
           {navbar.map(navbar=>(
                 <div className='Navbar'>
           <li className="nav-item dropdown">
-            <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">{navbar.FactionName}</a>
+            <a className="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-mdb-toggle="dropdown" aria-expanded="false">{navbar.factionName}</a>
             <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               <li>
                 <a className="dropdown-item">Ship Class
