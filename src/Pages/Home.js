@@ -1,39 +1,31 @@
-import Header from '../content/Header';
-import Leftsection from '../home/Leftsection';
-import Middlesection from '../home/Middlesection';
-import Rightsection from '../home/Rightsection'
-import Navbar from "../home/Navbar";
-import Announcment from '../content/Announcment';
-import Footer from '../content/Footer'
+import Header from "../components/Header/Header";
+import Leftsection from "../home/Leftsection";
+import Middlesection from "../home/Middlesection";
+import Rightsection from "../home/Rightsection";
+import Announcment from "../components/Announcement";
+import Navbar from "../components/Navbar/Navbar";
+import Footer from "../components/Footer/Footer";
+import { MDBRow, MDBCol } from "mdb-react-ui-kit";
 
 const Home = () => {
-    return (
-        <html>
-    <body>
-        <Header />
-      <nav className='navbar navbar-expand-lg navbar-dark bg-dark'>
-          <Navbar />
-      </nav>
-          <Announcment />
-      <section className='container-fluid'>
-        <div className='row'>
-          <div className='col order-1'>
-            <Leftsection />
-          </div>
-          <div className='col order-2'>
-            <Middlesection />
-          </div>
-          <div className='col order-3'>
-            <Rightsection />
-          </div>
-        </div>
-          <div>
-            <Footer />
-          </div>
-      </section>
-    </body>
-  </html>
-      
-    )
-}
+  return (
+    <>
+      <Header />
+      <Navbar />
+      <Announcment />
+      <MDBRow>
+        <MDBCol className="mb-3" order="1">
+          <Leftsection />
+        </MDBCol>
+        <MDBCol className="mb-3" order="2">
+          <Middlesection />
+        </MDBCol>
+        <MDBCol className="mb-3" order="3">
+          <Rightsection />
+        </MDBCol>
+      </MDBRow>
+      <Footer />
+    </>
+  );
+};
 export default Home;
